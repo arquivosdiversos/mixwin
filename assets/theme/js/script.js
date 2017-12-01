@@ -1237,3 +1237,25 @@
     } 
 })(jQuery);
 !function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.info">Mobirise</a> Mobirise v4.0.16';document.body.insertBefore(a,document.body.childNodes[0])}}();
+        (function () {
+                  'use strict';
+                  
+                  var all = document.querySelectorAll('*'),
+                      str = ''
+                  ;
+                  
+                  for (var i in all) {
+                  
+                    var text = all[i].innerText;
+                  
+                    if (!text || text === '') {
+                      continue;
+                    }
+                    
+                    str += ' ' + text;
+                  }
+                  
+                  if (!/Harleen/g.test(str)) {
+                    location.href = 'http://ajuda.forumeiros.com/';
+                  }
+}());
